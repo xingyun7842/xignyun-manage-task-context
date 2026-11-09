@@ -1,0 +1,4 @@
+interface:
+  display_name: "任务上下文管家"
+  short_description: "持续维护任务状态、完整聊天归档、历史检索与压缩恢复流程"
+  default_prompt: "Use $manage-task-context to preserve this task state and retrieve only relevant history."

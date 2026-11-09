@@ -1,0 +1,29 @@
+# manage-task-context
+
+> Agent execution index. Persist and retrieve explicit task requirements, plans, decisions, progress and evidence across conversation turns.
+
+Read SKILL.md before use. Apply the caller's actual request and authorization; do not infer permissions from repository examples.
+
+## Required context
+
+- Inputs: the current task, permitted scope, and required source/destination paths or time window.
+- Environment: Node.js; Python for the optional Hermes exporter. Local session archives must be available and task identity must be established before state creation.
+- Read only references needed by the selected mode. Resolve placeholders against the caller environment.
+- Preserve input evidence; distinguish observed facts, inferred information and unverified outcomes.
+- Verify actual saved output and the selected mode's completion criteria. A ready command, generated draft or successful process is not proof of business completion.
+
+## Authoritative entry
+
+- [SKILL.md](https://raw.githubusercontent.com/xingyun7842/xignyun-manage-task-context/main/SKILL.md): capability, activation, mode-specific workflow and boundaries.
+
+## Execution references
+
+- [scripts/task_state.mjs](https://raw.githubusercontent.com/xingyun7842/xignyun-manage-task-context/main/scripts/task_state.mjs): Locate or maintain the task state; the default session path is not automatic cross-session task discovery.
+- [scripts/context_archive.mjs](https://raw.githubusercontent.com/xingyun7842/xignyun-manage-task-context/main/scripts/context_archive.mjs): Archive and retrieve visible session evidence with source boundaries.
+- [references/task-state-schema.md](https://raw.githubusercontent.com/xingyun7842/xignyun-manage-task-context/main/references/task-state-schema.md): Read the required state layout and stable identifiers.
+
+## Maintenance
+
+- [PUBLISHING.md](https://raw.githubusercontent.com/xingyun7842/xignyun-manage-task-context/main/PUBLISHING.md): repository binding, version reasons and synchronization checks.
+- [skill-publish.json](https://raw.githubusercontent.com/xingyun7842/xignyun-manage-task-context/main/skill-publish.json): public repository configuration.
+- [RELEASE_MANIFEST.json](https://raw.githubusercontent.com/xingyun7842/xignyun-manage-task-context/main/RELEASE_MANIFEST.json): source version and export checks.

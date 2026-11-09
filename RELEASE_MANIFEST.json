@@ -1,0 +1,49 @@
+{
+  "skill": "manage-task-context",
+  "source_local_commit": "9198d91759e7c14725a1eb59ce4b03385f0a9519",
+  "source_baseline_commit": "612102f27049044689cba951cac1d632b0eca892",
+  "public_repository": "https://github.com/xingyun7842/xignyun-manage-task-context",
+  "reason": "Publish caller-configurable skill sources with an agent execution index and explicit version synchronization contract.",
+  "validation": "Python source syntax and package paths checked; no live service, credential or business operation was run.",
+  "portable_document_changes": [
+    "agents/openai.yaml: transcode legacy text encoding to UTF-8"
+  ],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "6bf361a8f10bc7775b0070b70dbb96479f7d97e4aa7c9390d4fb7ab25f3278e9"
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "d75c9b08e43e3d0389da7ce0ccc15dd2ecb3d78890fbaf7369e159dfda4577fc"
+    },
+    {
+      "path": "references/task-state-schema.md",
+      "sha256": "2aa34f6e29d873f4355b9a3c4bc51b23509009517b322b19a3a373fa44985986"
+    },
+    {
+      "path": "scripts/context_archive.mjs",
+      "sha256": "9c884d0eb6434b64305f66608ad33fecaaa973c8956d640a9e43330cead20ca3"
+    },
+    {
+      "path": "scripts/hermes_sqlite_export.py",
+      "sha256": "d8332a734a9baddbdae5dc9757959392853f9853edf517a65b53b94d51d3f47e"
+    },
+    {
+      "path": "scripts/task_state.mjs",
+      "sha256": "823633848dc9818aad58f8b4ae9951fa302374ebd5455f3c05ea524c81edea6a"
+    },
+    {
+      "path": "llms.txt",
+      "sha256": "130720a5fae08088c434389e59edc6aade1e54874eea96847e89d10c87d524a7"
+    },
+    {
+      "path": "PUBLISHING.md",
+      "sha256": "ff5b3139aecd270197efc853ad04fbdfd2b7ddc925848ac2d4dfc1517be32771"
+    },
+    {
+      "path": "skill-publish.json",
+      "sha256": "68dfec20a94666c570842260ad99cd956065e03f953624135d68a12073f45b4c"
+    }
+  ]
+}
